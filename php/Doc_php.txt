@@ -1,0 +1,17 @@
+<?php
+include_once 'Cliente.php';
+
+/*
+ *  * @author Wagner
+ */
+class Doc {
+    
+    public function Transferir (Cliente $c1, Cliente $c2, $quantia){
+        if ($c1->ChecarSaldo()>=$quantia){
+            $c1->sacar($quantia);
+            $c2->depositar($quantia);
+        }else{
+            echo "Saldo do: ".$c1->getNome()." insulficiente!";
+        }
+    }
+}

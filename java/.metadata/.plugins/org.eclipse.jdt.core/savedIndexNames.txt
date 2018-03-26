@@ -1,0 +1,2 @@
+INDEX VERSION 1.126+C:\Users\lab4\Desktop\wagner_list2_EX2\.metadata\.plugins\org.eclipse.jdt.core
+45384493.index

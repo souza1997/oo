@@ -1,0 +1,212 @@
+!SESSION 2018-03-26 17:45:55.311 -----------------------------------------------
+eclipse.buildId=M20130131-0800
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.rcp.product -feature com.microfocus.eclipse.core.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.rcp.product -feature com.microfocus.eclipse.core.product
+
+!ENTRY com.microfocus.eclipse.core 4 0 2018-03-26 17:46:22.123
+!MESSAGE Check for updates failed
+!STACK 1
+com.microfocus.eclipse.core.license.LicenseException: Check for updates failed
+	at com.microfocus.eclipse.core.license.ws.AutomaticActivationService.checkForUpdates(AutomaticActivationService.java:132)
+	at com.microfocus.eclipse.core.updates.CheckForUpdatesJob.run(CheckForUpdatesJob.java:84)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: javax.xml.ws.WebServiceException: Failed to access the WSDL at: https://secure.microfocus.com/LicenseRequest/Authentication.asmx?WSDL. It failed with: 
+	Connection reset.
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(Unknown Source)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(Unknown Source)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(Unknown Source)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(Unknown Source)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(Unknown Source)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(Unknown Source)
+	at javax.xml.ws.Service.<init>(Unknown Source)
+	at com.microfocus.regservice.Authentication.<init>(Authentication.java:42)
+	at com.microfocus.eclipse.core.license.ws.AutomaticActivationService.getWSClient(AutomaticActivationService.java:189)
+	at com.microfocus.eclipse.core.license.ws.AutomaticActivationService.checkForUpdates(AutomaticActivationService.java:115)
+	... 2 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.InputRecord.readFully(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.InputRecord.read(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at java.net.URL.openStream(Unknown Source)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(Unknown Source)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.resolveWSDL(Unknown Source)
+	... 11 more
+!SUBENTRY 1 com.microfocus.eclipse.core 4 0 2018-03-26 17:46:22.123
+!MESSAGE Check for updates failed
+!STACK 0
+javax.xml.ws.WebServiceException: Failed to access the WSDL at: https://secure.microfocus.com/LicenseRequest/Authentication.asmx?WSDL. It failed with: 
+	Connection reset.
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(Unknown Source)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(Unknown Source)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(Unknown Source)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(Unknown Source)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(Unknown Source)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(Unknown Source)
+	at javax.xml.ws.Service.<init>(Unknown Source)
+	at com.microfocus.regservice.Authentication.<init>(Authentication.java:42)
+	at com.microfocus.eclipse.core.license.ws.AutomaticActivationService.getWSClient(AutomaticActivationService.java:189)
+	at com.microfocus.eclipse.core.license.ws.AutomaticActivationService.checkForUpdates(AutomaticActivationService.java:115)
+	at com.microfocus.eclipse.core.updates.CheckForUpdatesJob.run(CheckForUpdatesJob.java:84)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.InputRecord.readFully(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.InputRecord.read(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at java.net.URL.openStream(Unknown Source)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(Unknown Source)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.resolveWSDL(Unknown Source)
+	... 11 more
+
+!ENTRY org.eclipse.jface 2 0 2018-03-26 17:46:36.342
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-03-26 17:46:36.342
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@e02324,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.graphiti.ui.internal.action.RemoveAction,Remove,
+		Remove selected Pictogram Elements,
+		Category(org.eclipse.graphiti.ui.Graphiti_Category,Edit,Graphiti Diagram Editor,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2018-03-26 17:57:20.888 -----------------------------------------------
+eclipse.buildId=M20130131-0800
+java.version=1.6.0_27
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.rcp.product -feature com.microfocus.eclipse.core.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.rcp.product -feature com.microfocus.eclipse.core.product
+
+!ENTRY com.microfocus.eclipse.core 4 0 2018-03-26 17:57:25.568
+!MESSAGE Check for updates failed
+!STACK 1
+com.microfocus.eclipse.core.license.LicenseException: Check for updates failed
+	at com.microfocus.eclipse.core.license.ws.AutomaticActivationService.checkForUpdates(AutomaticActivationService.java:132)
+	at com.microfocus.eclipse.core.updates.CheckForUpdatesJob.run(CheckForUpdatesJob.java:84)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: javax.xml.ws.WebServiceException: Failed to access the WSDL at: https://secure.microfocus.com/LicenseRequest/Authentication.asmx?WSDL. It failed with: 
+	Connection reset.
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(Unknown Source)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(Unknown Source)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(Unknown Source)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(Unknown Source)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(Unknown Source)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(Unknown Source)
+	at javax.xml.ws.Service.<init>(Unknown Source)
+	at com.microfocus.regservice.Authentication.<init>(Authentication.java:42)
+	at com.microfocus.eclipse.core.license.ws.AutomaticActivationService.getWSClient(AutomaticActivationService.java:189)
+	at com.microfocus.eclipse.core.license.ws.AutomaticActivationService.checkForUpdates(AutomaticActivationService.java:115)
+	... 2 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.InputRecord.readFully(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.InputRecord.read(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at java.net.URL.openStream(Unknown Source)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(Unknown Source)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.resolveWSDL(Unknown Source)
+	... 11 more
+!SUBENTRY 1 com.microfocus.eclipse.core 4 0 2018-03-26 17:57:25.568
+!MESSAGE Check for updates failed
+!STACK 0
+javax.xml.ws.WebServiceException: Failed to access the WSDL at: https://secure.microfocus.com/LicenseRequest/Authentication.asmx?WSDL. It failed with: 
+	Connection reset.
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(Unknown Source)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.parse(Unknown Source)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.parseWSDL(Unknown Source)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(Unknown Source)
+	at com.sun.xml.internal.ws.client.WSServiceDelegate.<init>(Unknown Source)
+	at com.sun.xml.internal.ws.spi.ProviderImpl.createServiceDelegate(Unknown Source)
+	at javax.xml.ws.Service.<init>(Unknown Source)
+	at com.microfocus.regservice.Authentication.<init>(Authentication.java:42)
+	at com.microfocus.eclipse.core.license.ws.AutomaticActivationService.getWSClient(AutomaticActivationService.java:189)
+	at com.microfocus.eclipse.core.license.ws.AutomaticActivationService.checkForUpdates(AutomaticActivationService.java:115)
+	at com.microfocus.eclipse.core.updates.CheckForUpdatesJob.run(CheckForUpdatesJob.java:84)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.InputRecord.readFully(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.InputRecord.read(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at java.net.URL.openStream(Unknown Source)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.createReader(Unknown Source)
+	at com.sun.xml.internal.ws.wsdl.parser.RuntimeWSDLParser.resolveWSDL(Unknown Source)
+	... 11 more
+
+!ENTRY org.eclipse.jface 2 0 2018-03-26 17:57:27.370
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-03-26 17:57:27.370
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@df574d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.graphiti.ui.internal.action.RemoveAction,Remove,
+		Remove selected Pictogram Elements,
+		Category(org.eclipse.graphiti.ui.Graphiti_Category,Edit,Graphiti Diagram Editor,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
